@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+testpaths = ["test", "crm/tests", "persistence_layer/tests"]
+norecursedirs = ["volumes", "*.egg", ".git", "__pycache__"]
+addopts = "--cov=. --cov-report=term-missing --ignore=volumes"
